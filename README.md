@@ -129,14 +129,6 @@ From the matched entry:
 
 ---
 
-### 🔧 Tools/Commands Used:
-- IOC Report Generator in Redline
-- View Hits module
-- VirusTotal (to identify malware family using hash)
-- IOC Editor
-
----
-
 ## Task 7 – Endpoint Investigation
 
 Using a separate `.mans` session from another Redline analysis:

@@ -162,8 +162,6 @@ Using a separate `.mans` session from another Redline analysis:
 
 ---
 
-## Final Tool Summary
-
 | Tool/Platform           | Use Case |
 |-------------------------|----------|
 | **Redline (FireEye)**   | Memory + Disk artifact collection, IOC scanning, local analysis |

@@ -184,8 +184,6 @@ Using a separate `.mans` session from another Redline analysis:
 | **Event Viewer in Redline** | Log inspection for anomalies |
 ****
 
-Certainly. Here’s a **precise, bullet-pointed Lessons Learned** section summarizing the key technical takeaways from the Redline walkthrough:
-
 ---
 
 ## Lessons Learned

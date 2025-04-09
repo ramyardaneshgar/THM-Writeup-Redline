@@ -79,9 +79,9 @@ In this forensic triage, I analyzed the most suspicious system-level activities 
 
 ## Task 5 – IOC Search Collector
 
-This task switched from exploratory forensics to **signature-based detection** using IOCs (Indicators of Compromise):
+This task switched from exploratory forensics to signature-based detection using IOCs (Indicators of Compromise):
 
-- Loaded Redline and configured a **custom IOC collection** targeting known malware artifacts.
+- Loaded Redline and configured a custom IOC collection targeting known malware artifacts.
 - The `.ioc` file defined:
   - Filename: `psylog.exe`
   - Hashes

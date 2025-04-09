@@ -6,7 +6,7 @@ By Ramyar Daneshgar
 
 ## Task 1 – Introduction
 
-Redline is an endpoint forensics tool by FireEye (now Mandiant). It’s tailored for live response collection**, IOC-based scanning, and malware hunting in Windows environments. It collects both volatile and non-volatile artifacts from the host system.
+Redline is an endpoint forensics tool by FireEye (now Mandiant). It’s tailored for live response collection, IOC-based scanning, and malware hunting in Windows environments. It collects both volatile and non-volatile artifacts from the host system.
 
 **Answer:** FireEye
 

@@ -23,7 +23,7 @@ I established a connection to the remote host via RDP (Remote Desktop Protocol).
   **Tool:** Redline  
   **Command:** `RunRedlineAudit.bat`
 
-This batch script executes the Audit Configuration XML that defines what artifacts (e.g., memory, services, prefetch, network connections) Redline collects. The result is a `.mans` file used later for analysis.
+This batch script executes the Audit Configuration XML that defines what artifacts (memory, services, prefetch, network connections) Redline collects. The result is a `.mans` file used later for analysis.
 
 ---
 
@@ -51,7 +51,7 @@ In this forensic triage, I analyzed the most suspicious system-level activities 
 
 ### 2. Malicious Scheduled Task:
 - Navigated to `Scheduled Tasks` tab
-- Found `MSOfficeUpdateFa.ke` – a **persistence mechanism** crafted to mimic a Microsoft process
+- Found `MSOfficeUpdateFa.ke` – a persistence mechanism crafted to mimic a Microsoft process
 
 ### 3. Message in Task Comment:
 - Found attacker message in the “Comment” metadata field:  

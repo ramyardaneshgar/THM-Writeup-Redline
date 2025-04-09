@@ -1,4 +1,4 @@
-****# THM-Writeup-Redline
+
 Redline forensics walkthrough leveraging FireEye Redline, IOC Search Collector, SHA256 hash analysis, Windows event logs, prefetch data, and VirusTotal for endpoint threat hunting.
 
 By Ramyar Daneshgar 
@@ -6,7 +6,7 @@ By Ramyar Daneshgar
 
 ## Task 1 – Introduction
 
-Redline is an endpoint forensics tool by **FireEye (now Mandiant)**. It’s tailored for **live response collection**, **IOC-based scanning**, and **malware hunting** in Windows environments. It collects both **volatile** and **non-volatile** artifacts from the host system.
+Redline is an endpoint forensics tool by FireEye (now Mandiant). It’s tailored for live response collection**, IOC-based scanning, and malware hunting in Windows environments. It collects both volatile and non-volatile artifacts from the host system.
 
 **Answer:** FireEye
 
@@ -14,7 +14,7 @@ Redline is an endpoint forensics tool by **FireEye (now Mandiant)**. It’s tail
 
 ## Task 2 – Data Collection
 
-I established a connection to the remote host via **RDP** (Remote Desktop Protocol). Once inside the Windows VM:
+I established a connection to the remote host via RDP (Remote Desktop Protocol). Once inside the Windows VM:
 
 - I attempted to save my Redline analysis in the default `Documents\Analysis` folder but was blocked due to pre-existing files (Redline requires a clean directory).
 - I created a new folder via GUI:  
@@ -23,18 +23,18 @@ I established a connection to the remote host via **RDP** (Remote Desktop Protoc
   **Tool:** Redline  
   **Command:** `RunRedlineAudit.bat`
 
-This batch script executes the **Audit Configuration XML** that defines what artifacts (e.g., memory, services, prefetch, network connections) Redline collects. The result is a `.mans` file used later for analysis.
+This batch script executes the Audit Configuration XML that defines what artifacts (e.g., memory, services, prefetch, network connections) Redline collects. The result is a `.mans` file used later for analysis.
 
 ---
 
 ## Task 3 – Redline Interface Exploration
 
-Once the `.mans` session was ready, I launched **Redline Analysis** on my host system:
+Once the `.mans` session was ready, I launched Redline Analysis on my host system:
 
-- From the Redline launcher, I selected **“Load Existing Analysis”** and browsed to the `.mans` file.
+- From the Redline launcher, I selected “Load Existing Analysis” and browsed to the `.mans` file.
 - The interface allowed artifact navigation via the left-hand menu.
 
-To locate the current **logged-in user**, I navigated to:  
+To locate the current logged-in user, I navigated to:  
 `System Information > User Information`
 
 This view lists SID values, usernames, session types, and login timestamps.
